@@ -13,7 +13,7 @@ pjson = JSON.parse(File.read('package.json'))
   s.author          = { "cqingwang" => "wangchangqing_2009@126.com" }
   s.ios.deployment_target = '8.0'
   s.source          = { :git => "#{path}.git", :branch => "master" }
-  s.source_files    = 'ios/analytics_ios_5.4.1/*.{h,m,frameworks}', 'ios/common_ios_1.4.2/normal/*.{h,m,frameworks}'
+  s.source_files    = 'ios/analytics_ios_5.4.1/*.{h,m,framework}', 'ios/common_ios_1.4.2/normal/*.{h,m,framework}'
   s.preserve_paths  = "**/*.js"
 
   s.dependency 'React/Core'
