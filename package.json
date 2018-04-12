@@ -2,6 +2,8 @@
   "name": "react-native-umeng-analytics",
   "version": "0.2.3",
   "main": "index.js",
+  "description":"umeng-analytics",
+  "license":"MIT",
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start"
   },
