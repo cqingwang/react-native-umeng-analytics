@@ -14,13 +14,11 @@ pjson = JSON.parse(File.read('package.json'))
   s.ios.deployment_target = '8.0'
   s.source          = { :git => "#{path}.git", :branch => "master" }
   s.vendored_frameworks =[
-  "ios/analytics_ios_5.4.1/UMAnalytics.framework",
-  "ios/common_ios_1.4.2/normal/UMCommon.framework",
-    "CoreTelephony.framework",
-    "libz.tbd",
-    "libsqlite3.tbd",
-    "SystemConfiguration.framework"
-  ]
+    "ios/analytics_ios_5.4.1/UMAnalytics.framework",
+    "ios/common_ios_1.4.2/normal/UMCommon.framework"
+    ]
+  s.frameworks = "CoreTelephony", "SystemConfiguration"
+  s.libraries = "sqlite3", "z"
   s.source_files    =  "ios/RCTUmengAnalytics/*.{h,m}"
   s.preserve_paths  = "**/*.js"
 
